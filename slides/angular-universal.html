@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="../node_modules/reveal.js/dist/theme/black.css">
+  <title>Slide</title>
+  <style>
+    .logo {
+      display: flex !important;
+      justify-content: space-around !important;
+      align-items: center !important;
+      width: 60%;
+      margin: 0 auto;
+    }
+    .logo img {
+      max-width: 200px;
+    }
+    .image-logo {
+      width: 20%;
+    }
+    .image-full-size {
+      width: 85%;
+      margin: 0 auto;
+    }
+    .image-full-size img {
+      width:100%;
+      height: 100%;
+
+    }
+    .portrait {
+      width: 50%;
+    }
+    .rounded {
+      border-radius: 50%;
+    }
+    .reveal em {
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section data-markdown>
+        <textarea data-template>
+          ## Angular Universal
+          🚀
+          <br />
+          <br />
+          <div class="logo">
+            <img src="assets/me.png" class="image-logo rounded"/>
+            <img src="assets/pragma.png" />
+            <img src="assets/angular/angular-logo.png" class="image-logo" />
+          </div>
+          <br />
+          <em>
+            Robert Stevens Pineda (stevenscol.co) <!-- .element class="footer" -->
+          </em>
+          ---
+          ### ¿Qué es Angular?
+          Es una plataforma de desarrollo construida en TypeScript para desarrollar aplicaciones web SPA (Single Page Application). <!-- .element class="fragment" -->
+          ---
+          ### ¿Qué nos ofrece?
+          - Un framework basado en componentes. <!-- .element class="fragment" -->
+          - Una colección de librerías que abarcan múltiples características. <!-- .element class="fragment" -->
+          - Un conjunto de herramientas de desarrollador que nos ayudan en el proceso de construcción de aplicaciones web. <!-- .element class="fragment" -->
+          ---
+          ### Páginas web tradicionales (SSR)
+          - Existen múltiples puntos de entrada o documentos HTML para cargar las vistas de la aplicación.<!-- .element class="fragment" -->
+          - El conjunto de páginas disponibles en la aplicación son elaboradas (rendering) y entregadas por el servidor mediante una recarga en el navegador.<!-- .element class="fragment" -->
+          - Habilita el SEO (Search Engine Optimization) en la aplicación.<!-- .element class="fragment" -->
+          ---
+          Ciclo de vida tradicional de una página web <!-- .element class="fragment" -->
+          <div class="image-full-size fragment">
+            <img src="assets/angular/traditional.png" />
+            <em>Client Side Rendering (CSR)</em>
+          </div>
+          ---
+          ### Single Page Application (SPA) <!-- .element class="fragment" -->
+          - Página o aplicación web que solo tiene un documento HTML como punto de entrada. <!-- .element class="fragment" -->
+          - El total de las páginas o características de la aplicación son renderizadas en el navagador web. <!-- .element class="fragment" -->
+          - No se requiere realizar recargas en la aplicación o páginas para interactuar. <!-- .element class="fragment" -->
+          - Hábilita el SEO solo para el punto de entrada de la aplicación. <!-- .element class="fragment" -->
+          ---
+          Ciclo de vida de una SPA <!-- .element class="fragment" -->
+          <div class="image-full-size fragment">
+            <img src="assets/angular/spa.png" />
+            <em>Server Side Rendering (SSR)</em>
+          </div>
+          ---
+          ### ¿Por qué Angular Universal?<!-- .element class="fragment" -->
+          ###### SEO<!-- .element class="fragment" -->
+          ##### SEO<!-- .element class="fragment" -->
+          #### SEO<!-- .element class="fragment" -->
+          ### SEO<!-- .element class="fragment" -->
+          ## SEO<!-- .element class="fragment" -->
+          # SEO<!-- .element class="fragment" -->
+        </textarea>
+      </section>
+    </div>
+  </div>
+  <script src="../node_modules/reveal.js/dist/reveal.js"></script>
+  <script src="../node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+  <script>
+    Reveal.initialize({
+      plugins: [ RevealMarkdown ]
+    });
+  </script>
+</body>
+</html>
