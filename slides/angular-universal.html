@@ -39,6 +39,9 @@
     .reveal em {
       font-size: 2rem;
     }
+    code {
+      background: #121215;
+    }
   </style>
 </head>
 <body>
@@ -72,33 +75,174 @@
           ### Páginas web tradicionales (SSR)
           - Existen múltiples puntos de entrada o documentos HTML para cargar las vistas de la aplicación.<!-- .element class="fragment" -->
           - El conjunto de páginas disponibles en la aplicación son elaboradas (rendering) y entregadas por el servidor mediante una recarga en el navegador.<!-- .element class="fragment" -->
+          ---
+          - Experiencia de usuario inicial más rápida.<!-- .element class="fragment" -->
           - Habilita el SEO (Search Engine Optimization) en la aplicación.<!-- .element class="fragment" -->
           ---
           Ciclo de vida tradicional de una página web <!-- .element class="fragment" -->
           <div class="image-full-size fragment">
             <img src="assets/angular/traditional.png" />
-            <em>Client Side Rendering (CSR)</em>
+            <em>Server Side Rendering (SSR)</em>
           </div>
           ---
           ### Single Page Application (SPA) <!-- .element class="fragment" -->
           - Página o aplicación web que solo tiene un documento HTML como punto de entrada. <!-- .element class="fragment" -->
           - El total de las páginas o características de la aplicación son renderizadas en el navagador web. <!-- .element class="fragment" -->
           - No se requiere realizar recargas en la aplicación o páginas para interactuar. <!-- .element class="fragment" -->
+          ---
+          - Experiencia intermedia y final del usuario más rápida.<!-- .element class="fragment" -->
           - Hábilita el SEO solo para el punto de entrada de la aplicación. <!-- .element class="fragment" -->
           ---
           Ciclo de vida de una SPA <!-- .element class="fragment" -->
           <div class="image-full-size fragment">
             <img src="assets/angular/spa.png" />
-            <em>Server Side Rendering (SSR)</em>
+            <em>Client Side Rendering (CSR)</em>
+          </div>
+          ---
+          ### Angular Universal<!-- .element class="fragment" -->
+          Nos permite dotar de superpoders a Angular, permitiéndonos unificar lo mejor de las aplicaciones web tradicionales (SSR) y las SPA (CSR).<!-- .element class="fragment" -->
+          <div class="logo fragment">
+            <img src="assets/angular/universal.png" class="image-logo rounded" class="fragment" />
           </div>
           ---
           ### ¿Por qué Angular Universal?<!-- .element class="fragment" -->
+          ---
           ###### SEO<!-- .element class="fragment" -->
           ##### SEO<!-- .element class="fragment" -->
           #### SEO<!-- .element class="fragment" -->
           ### SEO<!-- .element class="fragment" -->
           ## SEO<!-- .element class="fragment" -->
           # SEO<!-- .element class="fragment" -->
+          ---
+          <div class="image-full-size fragment">
+            <img src="assets/angular/search-results.png" />
+            <em>Indexación de páginas web</em>
+          </div>
+          ---
+          <div class="image-full-size fragment">
+            <img src="assets/angular/search-results-2.png" />
+            <em>Ejemplo de SEO</em>
+          </div>
+          ---
+          <div class="image-full-size portrait fragment">
+            <img src="assets/angular/social-media.png" />
+            <em>Redes Sociales</em>
+          </div>
+          ---
+          ### ¿Cómo   añadir Angular Universal?
+          🤔<!-- .element class="fragment" -->
+          ---
+          <!-- .slide: data-background="#151522" -->
+          ```
+          > ng add @nguniversal/express-engine
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/add-universal.png" />
+          </div>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          ```
+          server.ts
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/server-ts.png" />
+          </div>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          ```
+          package.json (scripts)
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/package-json.png" />
+          </div>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          ```
+          > npm run dev:ssr
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/dev-ssr.png" />
+          </div>
+          ---
+          ### Comparativa 🔥
+          CSR / SSR
+          <br />
+          <br />
+          https://github.com/StevensCol/cognito-app
+          ---
+          ```
+          app-routing.module.ts
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/routes.png" />
+          </div>
+          ---
+          ```
+          localhost:4200/
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/public.png" />
+          </div>
+          ---
+          ```
+          localhost:4200/signin
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/signin.png" />
+          </div>
+          ---
+          ```
+          localhost:4200/home
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/home.png" />
+          </div>
+          ---
+          #### CSR (Client Side Rendering)
+          ---
+          ```
+          > curl localhost:4200/
+          > curl localhost:4200/signin
+          > curl localhost:4200/home
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/csr.png" />
+          </div>
+          ---
+          #### SSR (Server Side Rendering)
+          ---
+          ```
+          > curl localhost:4201/
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/ssr-1.png" />
+          </div>
+          ---
+          <div class="image-full-size">
+            <img src="assets/angular/public.png" />
+          </div>
+          ---
+          ```
+          > curl localhost:4201/signin
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/ssr-2.png" />
+          </div>
+          ---
+          ```
+          > curl localhost:4201/home
+          ```
+          <div class="image-full-size">
+            <img src="assets/angular/ssr-3.png" />
+          </div>
+          ---
+          <div class="image-full-size">
+            <img src="assets/angular/signin.png" />
+          </div>
+          ---
+          #### ¿Preguntas?
+          ---
+          #### ¡Gracias!
         </textarea>
       </section>
     </div>
