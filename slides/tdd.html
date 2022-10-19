@@ -6,50 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../node_modules/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="../node_modules/reveal.js/dist/theme/black.css">
+  <link rel="stylesheet" href="styles/main.css">
   <title>Slide</title>
-  <style>
-    .logo {
-      display: flex !important;
-      justify-content: space-around !important;
-      align-items: center !important;
-        width: 60% !important;
-        margin: 0 auto;
-    }
-    .image-logo {
-      width: 25%;
-      border-radius: 50%;
-    }
-    .image-full-size {
-      width: 85%;
-        margin: 0 auto;
-    }
-    .image-full-size img {
-      width:100%;
-      height: 100%;
-
-    }
-    .portrait {
-      width: 50%;
-    }
-  </style>
 </head>
 <body>
+  <section class="brand">
+    <header class="main-header">
+      <img src="assets/pragma.png" alt="">
+      <img src="assets/circles.png" alt="">
+    </header>
+    <footer class="main-footer">
+      <img src="assets/url.png" alt="">
+    </footer>
+  </section>
   <div class="reveal">
     <div class="slides">
 
       <section data-markdown>
         <textarea data-template>
-          ## Test Driven Development (TDD)
+          ## Test Driven Development
+          ### (TDD)
           Una perspectiva que puede gustar
           🚀
           <br />
           <br />
-          <br />
           <div class="logo">
-            <img src="assets/me.png" class="image-logo"/>
-            <img src="assets/pragma.png" />
+            <img src="assets/me.png" class="image-logo rounded"/>
           </div>
-          Robert Stevens Pineda (stevenscol.co) <!-- .element class="logo" -->
+          <em>
+            Robert Stevens Pineda (stevenscol.co) <!-- .element class="footer" -->
+          </em>
           ---
           ### ¿Por qué probamos el código?
           - Nos lo exigen en el proyecto (Coverage) 📊<!-- .element class="fragment" -->

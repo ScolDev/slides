@@ -6,48 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../node_modules/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="../node_modules/reveal.js/dist/theme/black.css">
+  <link rel="stylesheet" href="styles/main.css">
   <title>Slide</title>
-  <style>
-    .logo {
-      display: flex !important;
-      justify-content: space-around !important;
-      align-items: center !important;
-      width: 60%;
-      margin: 0 auto;
-    }
-    .logo img {
-      max-width: 200px;
-    }
-    .image-logo {
-      width: 20%;
-    }
-    .image-full-size {
-      width: 85%;
-      margin: 0 auto;
-    }
-    .image-full-size img {
-      width:100%;
-      height: 100%;
-
-    }
-    .portrait {
-      width: 50%;
-    }
-    .rounded {
-      border-radius: 50%;
-    }
-    .reveal em {
-      font-size: 2rem;
-    }
-    code {
-      background: #121215;
-    }
-  </style>
 </head>
 <body>
+  <section class="brand">
+    <header class="main-header">
+      <img src="assets/pragma.png" alt="">
+      <img src="assets/circles.png" alt="">
+    </header>
+    <footer class="main-footer">
+      <img src="assets/url.png" alt="">
+    </footer>
+  </section>
   <div class="reveal">
     <div class="slides">
-
       <section data-markdown>
         <textarea data-template>
           ## Angular Universal
@@ -56,7 +29,6 @@
           <br />
           <div class="logo">
             <img src="assets/me.png" class="image-logo rounded"/>
-            <img src="assets/pragma.png" />
             <img src="assets/angular/angular-logo.png" class="image-logo" />
           </div>
           <br />
@@ -65,16 +37,16 @@
           </em>
           ---
           ### ¿Qué es Angular?
-          Es una plataforma de desarrollo construida en TypeScript para desarrollar aplicaciones web SPA (Single Page Application). <!-- .element class="fragment" -->
+          Plataforma de desarrollo construida en TypeScript para desarrollar aplicaciones web SPA (Single Page Application). <!-- .element class="fragment" -->
           ---
           ### ¿Qué nos ofrece?
-          - Un framework basado en componentes. <!-- .element class="fragment" -->
-          - Una colección de librerías que abarcan múltiples características. <!-- .element class="fragment" -->
-          - Un conjunto de herramientas de desarrollador que nos ayudan en el proceso de construcción de aplicaciones web. <!-- .element class="fragment" -->
+          - **Framework** basado en componentes. <!-- .element class="fragment" -->
+          - Colección de librerías que abarcan múltiples características. <!-- .element class="fragment" -->
+          - Conjunto de herramientas de desarrollador para facilitar el proceso de construcción de aplicaciones web. <!-- .element class="fragment" -->
           ---
           ### Páginas web tradicionales (SSR)
-          - Existen múltiples puntos de entrada o documentos HTML para cargar las vistas de la aplicación.<!-- .element class="fragment" -->
-          - El conjunto de páginas disponibles en la aplicación son elaboradas (rendering) y entregadas por el servidor mediante una recarga en el navegador.<!-- .element class="fragment" -->
+          - Múltiples puntos de entrada o documentos HTML para las vistas de la aplicación.<!-- .element class="fragment" -->
+          - Las páginas disponibles en la aplicación son elaboradas (rendering) y entregadas por el servidor mediante una recarga en el navegador.<!-- .element class="fragment" -->
           ---
           - Experiencia de usuario inicial más rápida.<!-- .element class="fragment" -->
           - Habilita el SEO (Search Engine Optimization) en la aplicación.<!-- .element class="fragment" -->
@@ -113,6 +85,10 @@
           ### SEO<!-- .element class="fragment" -->
           ## SEO<!-- .element class="fragment" -->
           # SEO<!-- .element class="fragment" -->
+          ---
+          <div class="fragment">
+            <img src="assets/angular/seo.gif" />
+          </div>
           ---
           <div class="image-full-size fragment">
             <img src="assets/angular/search-results.png" />

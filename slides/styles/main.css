@@ -1,0 +1,65 @@
+.logo {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  width: 60%;
+  margin: 0 auto;
+}
+.logo img {
+  max-width: 200px;
+}
+.image-logo {
+  width: 20%;
+}
+.image-full-size {
+  width: 85%;
+  margin: 0 auto;
+}
+.image-full-size img {
+  width:100%;
+  height: 100%;
+
+}
+.portrait {
+  width: 50%;
+}
+.rounded {
+  border-radius: 50%;
+}
+.reveal em {
+  font-size: 2rem;
+}
+code {
+  background: #121215;
+}
+strong {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.brand {
+  position: absolute;
+  width: 100%;
+  height:100%;
+}
+.brand img {
+  height: 30px
+}
+.brand footer img {
+  height: 20px
+}
+.main-header,
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: 2rem 2rem;
+  box-sizing: border-box;
+}
+.main-header {
+  top: 0;
+}
+.main-footer {
+  bottom: 0;
+}
