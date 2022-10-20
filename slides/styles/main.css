@@ -63,3 +63,17 @@ strong {
 .main-footer {
   bottom: 0;
 }
+.image-caption {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landscape-md img {
+  width: 70% !important;
+  height: auto !important
+}
+.portrait-lg img {
+  width: auto !important;
+  max-height: 550px !important;
+}
