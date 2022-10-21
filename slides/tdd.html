@@ -21,15 +21,14 @@
   </section>
   <div class="reveal">
     <div class="slides">
-
       <section
-        data-markdown
-        data-separator-vertical="^\r?\n----\r?\n$">
-        <textarea data-template>
+      data-markdown
+      data-separator-vertical="^\r?\n----\r?\n$">
+      <textarea data-template>
+          <!-- .slide: data-background="#151522" -->
           ## Test Driven Development
           ### (TDD)
-          Una perspectiva que puede gustar
-          🚀
+          Una perspectiva que agrada 🚀
           <br />
           <br />
           <div class="logo">
@@ -43,8 +42,7 @@
           - Nos lo exigen en el proyecto (Coverage) 📊<!-- .element class="fragment" -->
           - Mejoramiento de la calidad <!-- .element class="fragment" -->
             - Reducción de bugs 🐞<!-- .element class="fragment" -->
-            - Mantenibilidad (Refactoring) ⛽<!-- .element class="fragment" -->
-            - Evolución (Nuevas Características) 🏋️‍♂️<!-- .element class="fragment" -->
+            - Mantenibilidad (Nuevas características y mejoras) ⛽<!-- .element class="fragment" -->
           - ... <!-- .element class="fragment" -->
           - Es nuestra RESPONSABILIDAD y NO debe ser NEGOCIABLE 👀<!-- .element class="fragment" -->
           ---
@@ -57,7 +55,7 @@
           </div>
           ---
           ### Test Driven Development
-          Es una metódología de desarrollo cuyo objetivo es escribir primero las pruebas antes que su implentación  <!-- .element class="fragment" -->
+          Es una <strong>metodología de desarrollo</strong> cuyo objetivo es escribir primero las pruebas antes que su implentación  <!-- .element class="fragment" -->
           ---
           Se basa en tres reglas básicas:   <!-- .element class="fragment" -->
             1. No escribir código productivo hasta no tener una prueba que falle   <!-- .element class="fragment" -->
@@ -72,17 +70,36 @@
           ### ¿Por qué TDD?
           - Permite descubrir el diseño y comportamiento temprano antes de ser implementado <!-- .element class="fragment" -->
           - Completitud de los requerimientos <!-- .element class="fragment" -->
-          - Mejora notable de la Testeabilidad y otros atributos de calidad de la solución <!-- .element class="fragment" -->
-          - Ayuda a manejar la complejidad del software (divide y vencerás) <!-- .element class="fragment" -->
+          - Testeabilidad y otros atributos de calidad<!-- .element class="fragment" -->
+          - Complejidad del software (divide y vencerás) <!-- .element class="fragment" -->
+          - El coverage ya no es una métrica de vanidad<!-- .element class="fragment" -->
           - ...<!-- .element class="fragment" -->
-          ---
-          - Es una hábilidad muy bien valorada <!-- .element class="fragment" -->
-          - Enseña a construir mejores pruebas unitarias<!-- .element class="fragment" -->
-          - Facilita la enseñanza en el desarrollo de software<!-- .element class="fragment" -->
           ---
           ### Coverage 100%
           <div class="image-medium-size">
             <img src="assets/tdd/coverage.png" />
+          </div>
+          ---
+          aún hay más...
+          ---
+          ### ¿Por qué TDD?
+          - Es una hábilidad muy bien valorada <!-- .element class="fragment" -->
+          - Enseña a construir mejores pruebas de código<!-- .element class="fragment" -->
+          - Facilita la enseñanza en el desarrollo de software<!-- .element class="fragment" -->
+          ---
+          ### Caso práctico de éxito
+          <div class="logo">
+            <img src="assets/tdd/ale-1.jpeg" />
+            <img src="assets/tdd/ale-2.jpeg" />
+            <img src="assets/tdd/ale-3.jpeg" />
+            <img src="assets/tdd/ale-4.jpeg" />
+          </div>
+          <em>Componente desarrollado por Alejandra utilizando TDD</em>
+          <div>
+            <em>
+              <a href="https://github.com/alealrom/interactive-rating-component">Repo</a> -
+              <a href="https://alealrom.github.io/interactive-rating-component/">Demo</a>
+            </em>
           </div>
           ---
           <div class="image-full-size">
@@ -92,20 +109,45 @@
           ### Desventajas
           - No es una bala de plata <!-- .element class="fragment" -->
           - Curva de aprendizaje y adaptación <!-- .element class="fragment" -->
-          - Mayor esfuerzo (?) <!-- .element class="fragment" -->
+          - Mayor esfuerzo <!-- .element class="fragment" -->
           ---
           ### ¿Dónde continuar?
+          - Test Driven Development: By Example, Kent Beck (Libro)  <!-- .element class="fragment" -->
           - Learn TDD (GitHub)  <!-- .element class="fragment" -->
             https://github.com/dwyl/learn-tdd <!-- .element class="fragment" -->
           - Mi Canal de Youtube  <!-- .element class="fragment" -->
             https://youtube.com/c/ScolDev/videos <!-- .element class="fragment" -->
           - Talleres TDD  <!-- .element class="fragment" -->
-            - Como este https://github.com/StevensCol/tdd-practico-tic-tac-toe  <!-- .element class="fragment" -->
+            - Como este https://gitlab.com/Pragma_Capacidad/taller-tdd-tic-tac-toe <!-- .element class="fragment" -->
           ---
           <!-- .slide: data-background="#151522" -->
           ## Taller Práctico TDD
           ### Tic-Tac-Toe con TDD
           <img src="assets/tdd/tic-tac-toe.png" />
+          ---
+          <!-- .slide: data-background="#151522" -->
+          Requerimientos
+
+          - Debe permitir jugar a dos jugadores al tic-tac-toe al iniciar la aplicación.
+          - El primer jugador en realizar un movimiento tendrá asignado el simbolo "X" como marcador.
+          - El segundo jugador en realizar un movimiento se le asignara el símbolo "O" como marcador.
+          - El jugador puede elegir una casilla vacia del tablerao para realizar su movimiento
+          ---
+          <!-- .slide: data-background="#151522" -->
+          ToDo
+
+          - Si al realizar el movimiento del jugador se consigue un 3 en linea con su marcador, el jugador habrá ganado la partida.
+          - Si la partida ha tenido un ganador el juego no deberá permitir ingresar más marcadores hasta que se reinicie el juego.
+          - Si el juego termina en empaté, el juego debera ser reiniciado automaticamente.
+          ---
+          <!-- .slide: data-background="#151522" -->
+          UI
+          - Notificar el resultado del juego en la aplicación (Empata, Jugador 1 Gana, Jugador 2 Gana)
+          - Al terminar un juego con victoria, se resaltarán las casillas victoriosas que cumplan la condición de formar una linea de 3 marcadores iguales.
+          - Habrá un botón que permitirá reiniciar el juego.
+          ---
+          <!-- .slide: data-background="#151522" -->
+          ### Comencemos
           ---
           <!-- .slide: data-background="#151522" -->
           <section class="image-caption">
@@ -208,6 +250,79 @@
           <section class="image-caption landscape-md">
             <img class="r-stretch" src="assets/tdd/steps/16.png" />
             <em>La prueba pasa</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption landscape-md">
+            <img class="r-stretch" src="assets/tdd/steps/17-a.png" />
+            <em>Escribe una prueba que falle</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption landscape-md">
+            <img class="r-stretch" src="assets/tdd/steps/17-b.png" />
+            <em>Ejecuta la prueba</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption landscape-md">
+            <img class="r-stretch" src="assets/tdd/steps/18.png" />
+            <img class="r-stretch" src="assets/tdd/steps/19.png" />
+            <em>Escribir el código necesario para que pase</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption portrait-lg">
+            <img class="r-stretch" src="assets/tdd/steps/20.png" />
+            <em>Escribir el código necesario para que pase</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption landscape-md">
+            <img class="r-stretch" src="assets/tdd/steps/21.png" />
+            <em>La prueba pasa</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption portrait-lg">
+            <img class="r-stretch" src="assets/tdd/steps/22.png" />
+            <em>Refactorización</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption landscape-md">
+            <img class="r-stretch" src="assets/tdd/steps/23.png" />
+            <em>La prueba pasa</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption landscape-md">
+            <img class="r-stretch" src="assets/tdd/steps/24-a.png" />
+            <em>Escribe una prueba que falle</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption landscape-md">
+            <img class="r-stretch" src="assets/tdd/steps/24-b.png" />
+            <em>Ejecuta la prueba</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption portrait-lg">
+            <img class="r-stretch" src="assets/tdd/steps/25.png" />
+            <em>Escribir el código necesario para que pase</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption portrait-lg">
+            <img class="r-stretch" src="assets/tdd/steps/26.png" />
+            <em>La prueba pasa</em>
+          </section>
+          ---
+          <!-- .slide: data-background="#151522" -->
+          <section class="image-caption landscape-md">
+            <img class="r-stretch" src="assets/tdd/you.gif" />
+            <em>¡Ahora es tu turno!</em>
           </section>
           ---
           ¿Preguntas?
